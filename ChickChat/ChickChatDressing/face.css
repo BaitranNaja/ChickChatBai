@@ -1,0 +1,134 @@
+:root {
+    --background-color: rgba(244,211,94) ;
+    --base-color: rgba(238, 150, 075);
+    --box-color: rgba(217,217,217);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header img {
+    width: auto;
+    height: 100px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dressing img{
+    min-width: 200px;
+    min-height: 200px;
+    height: 100px;
+}
+
+.face-box {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    /* min-width: 200px;
+    min-height: 500px; */
+    width: auto;
+    height: auto;
+    background: var(--box-color);
+}
+
+#charScreen {
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    margin-left: -45px;
+    border-radius: 10px;
+    transition: 0.2s;
+    z-index: 20;
+}
+
+.img {
+    width: 150px;
+    margin: auto;
+}
+
+.img-list img {
+    width: 100px;
+}
+
+.face-box button {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.face-box button:hover {
+    background: var(--base-color);
+}
+
+.shop {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 20px;
+    background: transparent;
+    border: none;
+}
+
+.save {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    background: transparent;
+    border: none;
+}
+
+.shop i,
+.save i {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0px;
+    width: 100%;
+    height: 5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        margin-top: 150px ;
+    }
+
+}

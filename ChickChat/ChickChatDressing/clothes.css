@@ -1,0 +1,9 @@
+:root {
+    --background-color: rgba(244,211,94) ;
+    --base-color: rgba(238, 150, 075);
+    --box-color: rgba(217,217,217);
+}
+
+body {
+    background: var(--background-color);
+}
